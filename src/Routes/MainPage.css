@@ -73,7 +73,7 @@
 
 .taskContainer{
     display: flex;
-    height: 73%;
+    height: 70%;
     margin: 5px;
     border-radius: 10px;
     overflow-y: scroll;

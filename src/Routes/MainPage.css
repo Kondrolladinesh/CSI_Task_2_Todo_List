@@ -9,8 +9,8 @@
 
 .container{
     justify-content: center;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 650px;
     margin-top: 10px;
     background-color: #1D267D;
     border-radius: 10px;
@@ -74,7 +74,7 @@
 
 .taskContainer{
     display: flex;
-    height: 67%;
+    height: 73%;
     margin: 5px;
     border-radius: 10px;
     overflow-y: scroll;

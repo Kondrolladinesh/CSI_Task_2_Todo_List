@@ -10,12 +10,12 @@ uuidv4();
 
 
 const MainPage = () => {
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([]);
 
-  const addTodoTask = todo => {
-    setTodos([...todos, {id: new Date().getTime(), task: todo, 
+  const addTodoTask = (todo,duedate) => {
+    setTodos([...todos, {id: new Date().getTime(), task: todo, dueDate: duedate,
       completed: false, isEditing: false }])
-      console.log(todos)
+      // console.log(todos)
   }
 
   const deleteTodo = (id) => setTodos(todos.filter((todo) => todo.id !== id));
@@ -42,7 +42,6 @@ const MainPage = () => {
       )
     );
   };
-
   return (
     <div id= 'main'>
       <NavBar/>
@@ -58,6 +57,7 @@ const MainPage = () => {
               <Todo
                 key={todo.id}
                 task={todo}
+                dueDate={todo.dueDate} 
                 deleteTodo={deleteTodo}
                 editTodo={editTodo}
                 toggleComplete={toggleComplete}

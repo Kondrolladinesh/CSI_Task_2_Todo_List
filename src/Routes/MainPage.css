@@ -9,8 +9,8 @@
 
 .container{
     justify-content: center;
-    width: 500px;
-    height: 650px;
+    width: 600px;
+    height: 600px;
     margin-top: 10px;
     background-color: #1D267D;
     border-radius: 10px;
@@ -26,7 +26,7 @@
     border-radius: 10px;
     margin: 5px;
     width: 98%;
-    height: 150px;
+    height: 180px;
 }
 .TodoForm h1{
   color: #fff;
@@ -46,7 +46,8 @@
     background-color: #0C134F;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5px;
+    /* margin: 5px; */
+    margin-top: 0px;
 }
 #todoform input{
     border-radius: 5px;
@@ -73,7 +74,7 @@
 
 .taskContainer{
     display: flex;
-    height: 73%;
+    height: 67%;
     margin: 5px;
     border-radius: 10px;
     overflow-y: scroll;
@@ -87,14 +88,14 @@
     align-items: center;
     background: #892CDC;
     color: #fff;
-    padding: 0.75rem 1rem;
+    /* padding: 0.75rem 1rem; */
     border-radius: 5px;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     cursor: pointer;
-    height: 20px;
-    width: 80%;
+    height: auto;
+    width: 90%;
     margin: 5px;
-    gap: 3px;
+    /* gap: 3px; */
 }
 
 .Todo p{
@@ -102,13 +103,18 @@
     align-items: center;
     flex:1;
     justify-content: left;
+    margin: 0px;
 }
 .Todo p1{
   font-size: 15px;
   align-items: center;
+  color:#000;
+  width: 80px;
+  margin: 0px;
   /* flex:1; */
   /* justify-content: left; */
-  margin-right: 2px;
+  margin-right: 1px;
+
 }
 .form-icons{
     font-size: 1.3rem;
@@ -204,6 +210,9 @@
   &:hover {
     text-decoration: underline;
   }
+}
+.datePicker {
+  width: 10px;
 }
 
 

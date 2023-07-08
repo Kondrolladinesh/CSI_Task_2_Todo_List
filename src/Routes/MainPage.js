@@ -12,7 +12,7 @@ uuidv4();
 const MainPage = () => {
   // const [todos, setTodos] = useState([]);
   const [todos, setTodos] = useState(() => {
-    const storedPosts = localStorage.getItem("taskList");
+    const storedTasks = localStorage.getItem("taskList");
     return storedTasks ? JSON.parse(storedTakes) : [];
   });
 

@@ -46,6 +46,10 @@ const MainPage = () => {
       )
     );
   };
+
+  useEffect(() => {
+    localStorage.setItem('taskList', JSON.stringify(todos));
+  }, [todos]);
   return (
     <div id= 'main'>
       <NavBar/>

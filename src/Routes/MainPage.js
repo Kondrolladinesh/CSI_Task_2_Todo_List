@@ -10,7 +10,11 @@ uuidv4();
 
 
 const MainPage = () => {
-  const [todos, setTodos] = useState([]);
+  // const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => {
+    const storedPosts = localStorage.getItem("taskList");
+    return storedTasks ? JSON.parse(storedTakes) : [];
+  });
 
   const addTodoTask = (todo,duedate) => {
     setTodos([...todos, {id: new Date().getTime(), task: todo, dueDate: duedate,
